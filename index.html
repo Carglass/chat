@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body>
+    <input type="text" id="display-name">
+    <button id="login-button">Login</button>
+    <p id="login-status"></p>
+
+    <input type="text" id="session-name">
+    <button id="create-session">Create Session</button>
+
+    <div id="sessions">
+
+    </div>
+
+    <input type="text" id="chat-item">
+    <button id="chat"></button>
+    <div id="chat-content"></div>
+    
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCPVfQIzg5y4cjlU78lEqCRH5KAACH4J6Y",
+            authDomain: "simplech-8e8b3.firebaseapp.com",
+            databaseURL: "https://simplech-8e8b3.firebaseio.com",
+            projectId: "simplech-8e8b3",
+            storageBucket: "",
+            messagingSenderId: "266801245231"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
